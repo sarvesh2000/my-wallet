@@ -31,7 +31,7 @@ class _ExpensesWidgetState extends State<ExpensesWidget> {
               Container(
                   margin: EdgeInsets.only(left: width / 20),
                   child: Text(
-                    "Monthly Expenses",
+                    "Today\'s Transactions",
                     style: TextStyle(
                         fontWeight: FontWeight.bold, fontSize: fontSize(20)),
                   )),
