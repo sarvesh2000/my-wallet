@@ -30,9 +30,19 @@ class _DashboardPageState extends State<DashboardPage> {
           // Respond to item press.
           print("Selected:");
           print(value);
-          if (value == 2) {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => AddCard()));
+          switch (value) {
+            case 2:
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => AddCard()));
+              break;
+            case 0:
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DashboardPage()));
+              break;
+            case 1:
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => AddCard()));
+              break;
           }
         },
         items: [
